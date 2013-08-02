@@ -19,12 +19,14 @@ Or install it yourself as:
     $ gem install elbartostrikesagain-wolfram_alpha -s http://gems.github.com
 
 ## Usage
-
-    $ solution = WolframAlpha::Parser.new("price of gas in boulder")
-    $ solution.pods.map(&:text)
-    $ #["all grades of gasoline | average price per gallon | Boulder, Colorado", "$3.586/gal  (US dollars per gallon)  (Monday, July 29, 2013)"]
-    $ solution.pods.map(&:title)
-    $ #["Input interpretation:", "Result: (average estimate for Colorado):"]
+    
+    ```ruby
+    solution = WolframAlpha::Parser.new("price of gas in boulder")
+    solution.pods.map(&:text)
+    #["all grades of gasoline | average price per gallon | Boulder, Colorado", "$3.586/gal  (US dollars per gallon)  (Monday, July 29, 2013)"]
+    solution.pods.map(&:title)
+    #["Input interpretation:", "Result: (average estimate for Colorado):"]
+    ```
 
 ## Contributing
 
