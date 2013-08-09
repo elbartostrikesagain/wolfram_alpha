@@ -14,4 +14,6 @@ Gem::Specification.new do |gem|
   gem.name          = "wolfram"
   gem.require_paths = ["lib"]
   gem.version       = Wolfram::VERSION
+
+  gem.add_dependency('nokogiri')
 end
