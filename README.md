@@ -14,10 +14,6 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
-    
-    $ gem install elbartostrikesagain-wolfram_alpha -s http://gems.github.com
-
 ## Usage
 ```ruby
 solution = WolframAlpha::Parser.new("price of gas in boulder")
